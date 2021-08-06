@@ -3,7 +3,7 @@
 
 **01**- Given an **array** of objects, push one particular key (i.e. "name") of all the objects into an empty array, then return that array.
 
-**02**- Given an **array** of objects, find the element that is the MOST *something* (highest, oldest, youngest, shortest).
+**02**- Given an **array** of objects, find the element that is the MOST *something* (highest, oldest, youngest, shortest), then return that object.
 
 **03**- Given an **array** of objects and a **target**, find the element that matches the target. If the target cannot be found, return either null, false, or an error message, depending on what the problem requires.
 
