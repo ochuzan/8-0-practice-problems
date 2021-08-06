@@ -79,9 +79,9 @@ const pets = require("./pets-data.js")
  /**
  * getLowestCaretakerAge()
  * -----------------------------
- * Returns the `caretaker` of the pet with the lowest `caretakerAge`. If the inputted `pets` array is empty, return ''.
+ * Returns the `caretakerName` of the pet with the lowest `caretakerAge`. If the inputted `pets` array is empty, return ''.
  * @param {Object[]} pets - An array of pets.
- * @returns {string} The `caretaker` of the pet with the lowest `caretakerAge` of all pets.
+ * @returns {string} The `caretakerName` of the pet with the lowest `caretakerAge` of all pets.
  *
  * EXAMPLE:
  *  getLowestCaretakerAge(pets);
