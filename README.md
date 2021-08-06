@@ -1,4 +1,3 @@
-# Extra Practice Problems
 
 ## Categories of practice problems:
 
