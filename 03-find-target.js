@@ -89,16 +89,7 @@ const pets = require("./pets-data.js")
  *
  * EXAMPLE:
  *  findPetByFavoriteFood(pets, "watermelon");
- *  > {
-        petName: "Deloba",
-        petId: 101,
-        species: "dog",
-        caretakerName: "Sam",
-        age: 8,
-        favoriteFood: "watermelon",
-        caretakerAge: '27',
-        weightInPounds: 15
-    }
+ *  > "Deloba"
  */
     function findPetByFavoriteFood() {}
 
