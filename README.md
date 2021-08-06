@@ -1,6 +1,6 @@
-#Supplementary Practice Problems
+# Supplementary Practice Problems
 
-##Categories of practice problems:
+## Categories of practice problems:
 
 1) Given an array of objects, push one particular key (i.e. "name") of all the objects into an empty array, then return that array.
 
