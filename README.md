@@ -1,4 +1,4 @@
-# Supplementary Practice Problems
+# Extra Practice Problems
 
 ## Categories of practice problems:
 
