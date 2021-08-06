@@ -23,7 +23,7 @@ function getAllPetNames() {}
  * @param {Object[]} pets - An array of pets. 
  * @returns {string[]} An array of strings, which are the names of the pets' caretakers.
  *
- * EXAMPLE: getAllCaretakerNames(Caretakers);
+ * EXAMPLE: getAllCaretakerNames(pets);
  * > ["Sam", "Ari", "Nicole", "Katie", "Steven", "John"]
 */
 

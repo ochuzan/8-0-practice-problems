@@ -31,14 +31,14 @@ const pets = require("./pets-data.js")
 
 
   /**
- * getHighestPetWeight()
+ * getHeaviestPet()
  * -----------------------------
- * Returns the highest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
+ * Returns the pet object with the highest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
  * @param {Object[]} pets - An array of pets.
  * @returns {Object} The pet with the highest `weightInPounds`.
  *
  * EXAMPLE:
- *  getHighestPetWeight(pets);
+ *  getHeaviestPet(pets);
  *  > {
         petName: "Gia",
         species: "dog",
@@ -49,19 +49,19 @@ const pets = require("./pets-data.js")
         weightInPounds: 25
     }
  */
- function getHighestPetWeight() {}
+ function getHeaviestPet() {}
 
 
 
  /**
- * getLowestPetWeight()
+ * getLightestPet()
  * -----------------------------
- * Returns the lowest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
+ * Returns the pet object witht the lowest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
  * @param {Object[]} pets - An array of pets.
  * @returns {Object} The pet with the lowest `weightInPounds`.
  *
  * EXAMPLE:
- *  getLowestPetWeight(pets);
+ *  getLightestPet(pets);
  *  > {
         petName: "Tuba",
         species: "spotted gecko",
@@ -72,7 +72,7 @@ const pets = require("./pets-data.js")
         weightInPounds: 0.1
     }
  */
-    function getLowestPetWeight() {}
+    function getLightestPet() {}
 
 
 
