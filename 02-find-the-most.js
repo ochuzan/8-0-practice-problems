@@ -1,4 +1,4 @@
-const pets = require("./pets-data.js")
+const pets = require("./pets-data.js");
 
 /**
  * getHighestPetAge()
@@ -11,11 +11,9 @@ const pets = require("./pets-data.js")
  *  getHighestPetAge(pets);
  *  > 10
  */
- function getHighestPetAge() {}
+function getHighestPetAge() {}
 
-
-
- /**
+/**
  * getLowestPetAge()
  * -----------------------------
  * Returns the lowest `age` of all pets. If the inputted `pets` array is empty, return 0.
@@ -26,11 +24,9 @@ const pets = require("./pets-data.js")
  *  getLowestPetAge(pets);
  *  > 1
  */
-  function getLowestPetAge() {}
+function getLowestPetAge() {}
 
-
-
-  /**
+/**
  * getHeaviestPet()
  * -----------------------------
  * Returns the pet object with the highest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
@@ -42,18 +38,16 @@ const pets = require("./pets-data.js")
  *  > {
         petName: "Gia",
         species: "dog",
-        caretaker: "Steven",
+        caretakerName: "Steven",
         age: 3,
         favoriteFood: "salami",
         caretakerAge: "34",
         weightInPounds: 25
     }
  */
- function getHeaviestPet() {}
+function getHeaviestPet() {}
 
-
-
- /**
+/**
  * getLightestPet()
  * -----------------------------
  * Returns the pet object witht the lowest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
@@ -65,18 +59,16 @@ const pets = require("./pets-data.js")
  *  > {
         petName: "Tuba",
         species: "spotted gecko",
-        caretaker: "Ari",
+        caretakerName: "Ari",
         age: 2,
         favoriteFood: "mealworms",
         caretakerAge: "26",
         weightInPounds: 0.1
     }
  */
-    function getLightestPet() {}
+function getLightestPet() {}
 
-
-
- /**
+/**
  * getLowestCaretakerAge()
  * -----------------------------
  * Returns the `caretakerName` of the pet with the lowest `caretakerAge`. If the inputted `pets` array is empty, return ''.
@@ -87,7 +79,4 @@ const pets = require("./pets-data.js")
  *  getLowestCaretakerAge(pets);
  *  > "Katie"
  */
-  function getLowestCaretakerAge() {}
-
-
-    
+function getLowestCaretakerAge() {}
