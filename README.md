@@ -1,4 +1,4 @@
-# Practice Problems for Solving Common Patterns
+# Practice Exercises for Solving Common Problem Patterns
 
 As you've probably noticed, there are many common patterns that tend to pop up when it comes to problem solving. This will be true in real world practice too. Learning to solve each of these problem types is its own skill. The more adept you become at recognizing and solving each of these common types of problems, the better you'll get at solving more complex problems, which often include several of these problem types layered together.
 
