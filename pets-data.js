@@ -9,6 +9,7 @@ const pets = [
     caretakerAge: "27",
     weightInPounds: 15,
     friendsWith: ["Panda", "Chewy", "Akira"],
+    dueForCheckup: false,
   },
   {
     petName: "Tuba",
@@ -20,6 +21,7 @@ const pets = [
     caretakerAge: "26",
     weightInPounds: 0.1,
     friendsWith: ["Lizzie", "Panda"],
+    dueForCheckup: true,
   },
   {
     petName: "Percy",
@@ -31,6 +33,7 @@ const pets = [
     caretakerAge: "29",
     weightInPounds: 12,
     friendsWith: ["Max", "Remy", "Chewy"],
+    dueForCheckup: true,
   },
   {
     petName: "Monkey",
@@ -42,6 +45,7 @@ const pets = [
     caretakerAge: "17",
     weightInPounds: 14,
     friendsWith: ["Remy", "Max", "Gumby"],
+    dueForCheckup: true,
   },
   {
     petName: "Gia",
@@ -53,6 +57,7 @@ const pets = [
     caretakerAge: "34",
     weightInPounds: 25,
     friendsWith: ["Akira", "Mimi", "Max"],
+    dueForCheckup: false,
   },
   {
     petName: "Gumby",
@@ -73,6 +78,7 @@ const pets = [
       "Panda",
       "Remy",
     ],
+    dueForCheckup: true,
   },
 ];
 

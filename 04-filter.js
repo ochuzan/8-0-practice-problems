@@ -186,7 +186,7 @@ function findFriendsOf() {}
 /**
  * maxNumberOfFriends()
  * -----------------------------
- * Returns all pets' `petNames` with`friendsWith` array whose length is less than or equal to given number. If the inputted `pets` array is empty or all pets have more friends than given `maxFriends` number, return `[]`.
+ * Returns all pets' `petNames` whose`friendsWith` array length is less than or equal to given number. If the inputted `pets` array is empty or all pets have more friends than given `maxFriends` number, return `[]`.
  * @param {Object[]} pets - An array of pets. See the `pets-data.js` file for an example of this array.
  * @param {string} maxFriends - A maximum acceptable number of friends.
  * @returns {String[]} An array of pets' `petNames` where the pet's `friendsWith` array is shorter than the given `maxFriends` number.
