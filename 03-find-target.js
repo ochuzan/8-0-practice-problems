@@ -1,4 +1,4 @@
-const pets = require("./pets-data.js")
+const pets = require("./pets-data.js");
 
 /**
  * findPetById()
@@ -21,10 +21,12 @@ const pets = require("./pets-data.js")
         caretakerAge: "17",
         weightInPounds: 14
     }
+
+EXAMPLE:
+ *  findPetById(pets, 100);
+ *  > "Could not find pet with ID of '100'."
  */
-    function findPetById() {}
-
-
+function findPetById() {}
 
 /**
  * findPetByName()
@@ -47,15 +49,18 @@ const pets = require("./pets-data.js")
         caretakerAge: "61",
         weightInPounds: 18
     }
- */
-    function findPetByName() {}
 
+EXAMPLE:
+ *  findPetByName(pets, "Steven");
+ *  > "Could not find pet with name of 'Steven'."
+ */
+function findPetByName() {}
 
 /**
  * findPetByCaretaker()
  * -----------------------------
  * Returns a pet object from an array of objects based on the input `caretaker`. If the inputted `pets` array is
- * empty or the `petName` does not match any pets, return error message: `Could not find pet with name of '${name}'.`
+ * empty or the `caretakerName` does not match any pets, return error message: `Could not find pet with caretaker named '${name}'.`
  * @param {Object[]} pets - An array of pets. See the `pets-data.js` file for an example of this array.
  * @param {string} name - A pet `caretakerName`.
  * @returns {Object||string} The pet object with the matching `petName`. || If input `name` cannot be found, return error message string.
@@ -72,24 +77,29 @@ const pets = require("./pets-data.js")
         caretakerAge: "29",
         weightInPounds: 12
     }
+
+    EXAMPLE:
+ *  findPetByCaretaker(pets, "Sabrina");
+ *  > "Could not find pet with caretaker named 'Sabrina'"
  */
-    function findPetByCaretaker() {}
-
-
+function findPetByCaretaker() {}
 
 /**
  * findPetByFavoriteFood()
  * -----------------------------
  * Returns a `petName` from an array of pets based on the input `FavoriteFood`. If the inputted `pets` array is
- * empty or the inputted `food` does not match any pets, return error message: `Could not find pet with favorite food of '${food}'.`
+ * empty or the inputted `food` does not match any pets, return null
  * @param {Object[]} pets - An array of pets. See the `pets-data.js` file for an example of this array.
  * @param {string} food - A pet's `favoriteFood`.
- * @returns {string} The `petName` of the pet whose `favoriteFood` matches the input `food` 
- * if the input doesn't match any pets `favoriteFood`, return an error message
+ * @returns {string || null} The `petName` of the pet whose `favoriteFood` matches the input `food`
+ * if the input doesn't match any pets `favoriteFood`, return null
  *
  * EXAMPLE:
  *  findPetByFavoriteFood(pets, "watermelon");
  *  > "Deloba"
+ *
+ * EXAMPLE:
+ *  findPetByFavoriteFood(pets, "steak");
+ *  > null
  */
-    function findPetByFavoriteFood() {}
-
+function findPetByFavoriteFood() {}
