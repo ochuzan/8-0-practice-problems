@@ -71,12 +71,25 @@ function getLightestPet() {}
 /**
  * getLowestCaretakerAge()
  * -----------------------------
- * Returns the `caretakerName` of the pet with the lowest `caretakerAge`. If the inputted `pets` array is empty, return ''.
+ * Returns the `caretakerAge` of the pet with the lowest `caretakerAge`. If the inputted `pets` array is empty, return 0.
+ * @param {Object[]} pets - An array of pets.
+ * @returns {number} The lowest `caretakerAge` of all pets as a number (not a string).
+ *
+ * EXAMPLE:
+ *  getLowestCaretakerAge(pets);
+ *  > 17
+ */
+function getLowestCaretakerAge() {}
+
+/**
+ * getNameOfYoungestCaretaker()
+ * -----------------------------
+ * Returns the `caretakerName` of the pet with the lowest `caretakerAge`. If the inputted `pets` array is empty, return an empty string: ''.
  * @param {Object[]} pets - An array of pets.
  * @returns {string} The `caretakerName` of the pet with the lowest `caretakerAge` of all pets.
  *
  * EXAMPLE:
- *  getLowestCaretakerAge(pets);
+ *  getNameOfYoungestCaretaker(pets);
  *  > "Katie"
  */
-function getLowestCaretakerAge() {}
+function getNameOfYoungestCaretaker() {}
