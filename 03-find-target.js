@@ -80,7 +80,7 @@ function findPetByName() {}
 
     EXAMPLE:
  *  findPetByCaretaker(pets, "Sabrina");
- *  > "Could not find pet with caretaker named 'Sabrina'"
+ *  > "Could not find pet with caretaker named 'Sabrina'."
  */
 function findPetByCaretaker() {}
 
