@@ -168,9 +168,9 @@ function filterByMaxAge() {}
 /**
  * findFriendsOf()
  * -----------------------------
- * Returns all pets' `petNames` that include `friend` in their `friendsWith` array. If the inputted `pets` array is empty or no pets match the inputted `friend`, return `[]`.
+ * Returns all pets' `petNames` that include the inputted `friend` in their `friendsWith` array. If the inputted `pets` array is empty or no pets match the inputted `friend`, return `[]`.
  * @param {Object[]} pets - An array of pets. See the `pets-data.js` file for an example of this array.
- * @param {string} friend - A friend of one or more pets.
+ * @param {string} friend - A name to check for in the pets' `friendsWith` arrays.
  * @returns {String[]} An array of pets' `petNames` where the pet's `friendsWith` array includes the inputted `friend`.
  *
  * EXAMPLE:
