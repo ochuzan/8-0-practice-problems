@@ -1,8 +1,8 @@
-# Practice for Common Problem Patterns
+# Common Problem Patterns
 
 As you've probably noticed, there are many common patterns that tend to pop up when it comes to problem solving. This will be true in real world practice too. Learning to solve each of these problem types is its own skill. The more adept you become at recognizing and solving common types of problems, the better you'll get at solving more complex problems, which often include several of these problem types layered together.
 
-## Categories of practice problems:
+## Categories of practice problems in this repo:
 
 **01**- Given an **array** of objects, accumulate one particular key (i.e. "name") of all the objects, then return that accumulation. (getting totals and averages falls under this category too)
 
