@@ -1,4 +1,4 @@
-const pets = require("./pets-data.js");
+const petsData = require("./pets-data.js");
 
 /**
  * speciesCount()
