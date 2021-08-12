@@ -1,3 +1,4 @@
+const pets = require("./pets-data.js");
 const petsData = require("./pets-data.js");
 
 /**
@@ -11,7 +12,22 @@ const petsData = require("./pets-data.js");
  *  getHighestPetAge(pets);
  *  > 10
  */
-function getHighestPetAge() {}
+function getHighestPetAge(pets) {
+    if (!pets.length){
+        return 0;
+    }
+    let oldestPet = 0;
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].age > oldestPet){
+            oldestPet = pets[i].age;
+        }
+    }
+    return oldestPet;
+}
+
+petsData2 = [];
+console.log(getHighestPetAge(petsData));
+// console.log(getHighestPetAge(petsData2));
 
 /**
  * getLowestPetAge()
@@ -24,7 +40,21 @@ function getHighestPetAge() {}
  *  getLowestPetAge(pets);
  *  > 1
  */
-function getLowestPetAge() {}
+function getLowestPetAge(pets) {
+    if (!pets.length){
+        return 0;
+    }
+
+    let youngestAge = pets[0].age;
+    for (let i=1; i<pets.length; i++){
+        if (pets[i].age < youngestAge){
+            youngestAge = pets[i].age;
+        }
+    }
+    return youngestAge;
+}
+
+console.log(getLowestPetAge(petsData));
 
 /**
  * getHeaviestPet()
@@ -45,12 +75,26 @@ function getLowestPetAge() {}
         weightInPounds: 25
     }
  */
-function getHeaviestPet() {}
+function getHeaviestPet(pets) {
+    if (!pets.length){
+        return {};
+    }
+
+    let chonkiestPet = pets[0];
+    for (let i=1; i<pets.length; i++){
+        if (pets[i].weightInPounds > chonkiestPet.weightInPounds){
+            chonkiestPet = pets[i];
+        }
+    }
+    return chonkiestPet;
+}
+
+console.log(getHeaviestPet(petsData));
 
 /**
  * getLightestPet()
  * -----------------------------
- * Returns the pet object witht the lowest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
+ * Returns the pet object with the lowest `weightInPounds` of all pets. If the inputted `pets` array is empty, return {}.
  * @param {Object[]} pets - An array of pets.
  * @returns {Object} The pet with the lowest `weightInPounds`.
  *
@@ -66,7 +110,21 @@ function getHeaviestPet() {}
         weightInPounds: 0.1
     }
  */
-function getLightestPet() {}
+function getLightestPet(pets) {
+    if (!pets.length){
+        return {};
+    }
+
+    let lightestPet = pets[0];
+    for (let i=1; i<pets.length; i++){
+        if (pets[i].weightInPounds < lightestPet.weightInPounds){
+            lightestPet = pets[i];
+        }
+    }
+    return lightestPet;
+}
+
+console.log(getLightestPet(petsData));
 
 /**
  * getLowestCaretakerAge()
@@ -79,7 +137,21 @@ function getLightestPet() {}
  *  getLowestCaretakerAge(pets);
  *  > 17
  */
-function getLowestCaretakerAge() {}
+function getLowestCaretakerAge(pets) {
+    if (!pets.length){
+        return {};
+    }
+
+    let youngestCaretakerObj = pets[0];
+    for (let i=1; i<pets.length; i++){
+        if (Number(pets[i].caretakerAge) < Number(youngestCaretakerObj.caretakerAge)){
+            youngestCaretakerObj = pets[i];
+        }
+    }
+    return Number(youngestCaretakerObj.caretakerAge);
+}
+
+console.log(getLowestCaretakerAge(petsData));
 
 /**
  * getNameOfYoungestCaretaker()
@@ -92,4 +164,15 @@ function getLowestCaretakerAge() {}
  *  getNameOfYoungestCaretaker(pets);
  *  > "Katie"
  */
-function getNameOfYoungestCaretaker() {}
+function getNameOfYoungestCaretaker(pets) {
+    let youngestCaretakerObj = pets[0];
+
+    for (let i=1; i<pets.length; i++){
+        if (Number(pets[i].caretakerAge) < Number(youngestCaretakerObj.caretakerAge)){
+           youngestCaretakeObj = pets[i];
+        }
+    }
+    return youngestCaretakeObj.caretakerName;;
+}
+
+console.log(getNameOfYoungestCaretaker(petsData));

@@ -15,7 +15,16 @@ const petsData = require("./pets-data.js");
  * cat: 3
  * }
  */
-function speciesCount() {}
+function speciesCount(pets) {
+    if (!pets.length){
+        return {};
+    }
+
+    let speciesObj = {};
+    for (let i=0; i<pets.length; i++){
+        
+    }
+}
 
 /**
  * dueForCheckupCount()

@@ -26,7 +26,21 @@ EXAMPLE:
  *  findPetById(pets, 100);
  *  > "Could not find pet with ID of '100'."
  */
-function findPetById() {}
+function findPetById(pets, id) {
+    if (!pets.length){
+        return `Could not find pet with ID of '${id}'`;
+    }
+
+    for (let i=0; i<pets.length; i++){
+        if (id === pets[i].petId){
+            return petObj = pets[i];
+        }
+    }
+    return `Could not find pet with ID of '${id}'`;
+}
+
+// console.log(findPetById(petsData, 104));
+// console.log(findPetById(petsData, 100));
 
 /**
  * findPetByName()
@@ -54,7 +68,22 @@ EXAMPLE:
  *  findPetByName(pets, "Steven");
  *  > "Could not find pet with name of 'Steven'."
  */
-function findPetByName() {}
+function findPetByName(pets, name) {
+    if (!pets.length){
+        return `Could not find pet with ID of '${name}'`;
+    }
+
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].petName === name){ 
+            return pets[i];
+        }
+    }
+
+    return `Could not find pet with ID of '${name}'`;
+}
+
+// console.log(findPetByName(petsData, "Gumby"));
+// console.log(findPetByName(petsData, "Steven"));
 
 /**
  * findPetByCaretaker()
@@ -82,7 +111,22 @@ function findPetByName() {}
  *  findPetByCaretaker(pets, "Sabrina");
  *  > "Could not find pet with caretaker named 'Sabrina'."
  */
-function findPetByCaretaker() {}
+function findPetByCaretaker(pets, name) {
+    if (!pets.length){
+        return `Could not find pet with caretaker named '${name}'`;
+    }
+
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].caretakerName === name){ 
+            return pets[i];
+        }
+    }
+
+    return `Could not find pet with caretaker named '${name}'`;
+}
+
+// console.log(findPetByCaretaker(petsData, "Nicole"));
+// console.log(findPetByCaretaker(petsData, "Sabrina"));
 
 /**
  * findPetByFavoriteFood()
@@ -102,4 +146,19 @@ function findPetByCaretaker() {}
  *  findPetByFavoriteFood(pets, "steak");
  *  > null
  */
-function findPetByFavoriteFood() {}
+function findPetByFavoriteFood(pets, food) {
+    if (!pets.length){
+        return null;
+    }
+
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].favoriteFood === food){ 
+            return pets[i].petName;
+        }
+    }
+
+    return null;
+}
+
+// console.log(findPetByFavoriteFood(petsData, "watermelon"));
+// console.log(findPetByFavoriteFood(petsData, "steak"));

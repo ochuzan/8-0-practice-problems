@@ -11,7 +11,23 @@ const petsData = require("./pets-data.js");
  * > ["Deloba", "Tuba", "Percy", "Monkey", "Gia", "Gumby"]
  */
 
-function getAllPetNames() {}
+function getAllPetNames(pets) {
+    // if (pets.length === 0){
+    //     return [];
+    // }
+
+    let namesArr = [];
+    for (let i=0; i<pets.length; i++){
+        if (pets.length === 0){ // Another way to return an array, but less efficient since it iterates through the array first
+            return [];
+        } else { 
+            namesArr.push(pets[i].petName);
+        }
+    }
+    return namesArr;
+}
+
+console.log(getAllPetNames(petsData));
 
 /**
  * getAllCaretakerNames()
@@ -24,7 +40,19 @@ function getAllPetNames() {}
  * > ["Sam", "Ari", "Nicole", "Katie", "Steven", "John"]
  */
 
-function getAllCaretakerNames() {}
+function getAllCaretakerNames(pets) {
+    if (pets.length === 0){
+        return [];
+    }
+
+    let namesArr = [];
+    for (let i=0; i<pets.length; i++){
+        namesArr.push(pets[i].caretakerName);
+    }
+    return namesArr;
+}
+
+console.log(getAllCaretakerNames(petsData));
 
 /**
  * getAllFavoriteFoods()
@@ -37,7 +65,19 @@ function getAllCaretakerNames() {}
  * > ["watermelon", "mealworms", "fish", "dog food", "salami", "bacon"]
  */
 
-function getAllFavoriteFoods() {}
+function getAllFavoriteFoods(pets) {
+    if (pets.length === 0){
+        return [];
+    }
+
+    let namesArr = [];
+    for (let i=0; i<pets.length; i++){
+        namesArr.push(pets[i].favoriteFood);
+    }
+    return namesArr;
+}
+
+console.log(getAllFavoriteFoods(petsData));
 
 /**
  * getAllPetSpecies()
@@ -50,7 +90,19 @@ function getAllFavoriteFoods() {}
  * > ["dog", "spotted gecko", "cat", "cat", "dog", "cat"]
  */
 
-function getAllPetSpecies() {}
+function getAllPetSpecies(pets) {
+    if (pets.length === 0){
+        return [];
+    }
+
+    let species = [];
+    for (let i=0; i<pets.length; i++){
+        species.push(pets[i].species);
+    }
+    return species;
+}
+
+console.log(getAllPetSpecies(petsData));
 
 /**
  * getAllPetAges()
@@ -63,7 +115,19 @@ function getAllPetSpecies() {}
  * > [8, 2, 1, 10, 3, 6]
  */
 
-function getAllPetAges() {}
+function getAllPetAges(pets) {
+    if (pets.length === 0){
+        return [];
+    }
+
+    let petsAges = [];
+    for (let i=0; i<pets.length; i++){
+        petsAges.push(pets[i].age);
+    }
+    return petsAges;
+}
+
+console.log(getAllPetAges(petsData));
 
 /**
  * totalAllPetAges()
@@ -76,7 +140,19 @@ function getAllPetAges() {}
  * > 30
  */
 
-function totalAllPetAges() {}
+function totalAllPetAges(pets) {
+    if (pets.length === 0){
+        return 0;
+    }
+
+    let totalPetAge = 0;
+    for (let i=0; i<pets.length; i++){
+        totalPetAge += pets[i].age;
+    }
+    return totalPetAge;
+}
+
+console.log(totalAllPetAges(petsData));
 
 /**
  * averageAllPetAges()
@@ -89,7 +165,20 @@ function totalAllPetAges() {}
  * > 5
  */
 
-function averageAllPetAges() {}
+function averageAllPetAges(pets) {
+    if(pets.length === 0){
+        return 0;
+    }
+
+    let totalAge = 0;
+    for (let i=0; i<pets.length; i++){
+        totalAge += pets[i].age;
+    }
+
+    return totalAge/pets.length;
+}
+
+console.log(averageAllPetAges(petsData));
 
 /**
  * averageAllCaretakerAges()
@@ -102,4 +191,16 @@ function averageAllPetAges() {}
  * > 32.3333333
  */
 
-function averageAllCaretakerAges() {}
+function averageAllCaretakerAges(pets) {
+    if(pets.length === 0){
+        return 0;
+    }
+
+    let totalAge = 0;
+    for (let i=0; i<pets.length; i++){
+        totalAge += Number(pets[i].caretakerAge);
+    }
+    return totalAge/pets.length;
+}
+
+console.log(averageAllCaretakerAges(petsData));

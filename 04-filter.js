@@ -47,7 +47,22 @@ const petsData = require("./pets-data.js");
  *  filterBySpecies(pets, "parakeet")
  *  > []
  */
-function filterBySpecies() {}
+function filterBySpecies(pets, species) {
+    if (!pets.length){
+        return [];
+    }
+
+    let specificSpeciesArr = [];
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].species === species){
+            specificSpeciesArr.push(pets[i]);
+        }
+    }
+    return specificSpeciesArr;
+}
+
+// console.log(filterBySpecies(petsData, "cat"));
+// console.log(filterBySpecies(petsData, "parakeet"));
 
 /**
  * getNamesBySpecies()
@@ -65,7 +80,23 @@ function filterBySpecies() {}
  *  getNamesBySpecies(pets, "parakeet")
  *  > []
  */
-function getNamesBySpecies() {}
+function getNamesBySpecies(pets, species) {
+    if (!pets.length){
+        return [];
+    }
+
+    let specificSpeciesArr = [];
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].species === species){
+            specificSpeciesArr.push(pets[i].petName);
+        }
+    }
+    return specificSpeciesArr;    
+}
+
+// console.log(getNamesBySpecies(petsData, "dog"));
+// console.log(getNamesBySpecies(petsData, "parakeet"));
+
 
 /**
  * filterByMinAge()
@@ -114,7 +145,22 @@ function getNamesBySpecies() {}
  *  filterByMinAge(pets, 12)
  *  > []
  */
-function filterByMinAge() {}
+function filterByMinAge(pets, minAge) {
+    if (!pets.length){
+        return [];
+    }
+
+    let petsByMinAgeArr = [];
+    for (let i=0; i<pets.length; i++){
+        if(pets[i].age >= minAge){
+            petsByMinAgeArr.push(pets[i]);
+        }
+    }
+    return petsByMinAgeArr;
+}
+
+// console.log(filterByMinAge(petsData, 5));
+// console.log(filterByMinAge(petsData, 12));
 
 /**
  * filterByMaxAge()
@@ -163,7 +209,22 @@ function filterByMinAge() {}
  *  filterByMaxAge(pets, 0)
  *  > []
  */
-function filterByMaxAge() {}
+function filterByMaxAge(pets, maxAge) {
+    if (!pets.length){
+        return [];
+    }
+
+    let petsByMaxAgeArr = [];
+    for (let i=0; i<pets.length; i++){
+        if(pets[i].age <= maxAge){
+            petsByMaxAgeArr.push(pets[i]);
+        }
+    }
+    return petsByMaxAgeArr;
+}
+
+// console.log(filterByMaxAge(petsData, 3));
+// console.log(filterByMaxAge(petsData, 0));
 
 /**
  * findFriendsOf()
@@ -181,7 +242,26 @@ function filterByMaxAge() {}
  *  findFriendsOf(pets, "Kevin")
  *  > []
  */
-function findFriendsOf() {}
+function findFriendsOf(pets, friend) {
+    if (!pets.length){
+        return [];
+    }
+
+    let isFriendsWith = [];
+    for (let i=0; i<pets.length; i++){
+        let petFriendsArr = pets[i].friendsWith
+        for (let j=0; j<petFriendsArr.length; j++){
+            if(petFriendsArr[j].includes(friend)){
+                isFriendsWith.push(pets[i].petName);
+            }
+        }
+    }
+    return isFriendsWith;
+}
+
+// console.log(findFriendsOf(petsData, "Remy"));
+// console.log(findFriendsOf(petsData, "Kevin"));
+// console.log(findFriendsOf(petsData, "Gumby"));
 
 /**
  * maxNumberOfFriends()
@@ -199,4 +279,19 @@ function findFriendsOf() {}
  *  maxNumberOfFriends(pets, 0)
  *  > []
  */
-function maxNumberOfFriends() {}
+function maxNumberOfFriends(pets, maxFriends) {
+    if (!pets.length){
+        return [];
+    }
+
+    let hasMaxNumFriends = [];
+    for (let i=0; i<pets.length; i++){
+        if (pets[i].friendsWith.length <= maxFriends){
+            hasMaxNumFriends.push(pets[i].petName);
+        }
+    }
+    return hasMaxNumFriends;
+}
+
+// console.log(maxNumberOfFriends(petsData, 3));
+// console.log(maxNumberOfFriends(petsData, 0));
